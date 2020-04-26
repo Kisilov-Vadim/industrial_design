@@ -1,0 +1,347 @@
+@font-face {
+  font-family: BankGothic;
+  src: url('../fonts/bankgothic/BankGothicMdBT.ttf');
+}
+
+@font-face {
+  font-family: BankGothicRegular;
+  src: url('../fonts/bankgothic/bankgothicRegular.ttf');
+}
+
+@font-face {
+  font-family: BankGothicLight;
+  src: url('../fonts/bankgothic/BankGothicLight.ttf');
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  src: url('../fonts/source_sans_pro/SourceSansPro-Regular');
+}
+
+@font-face {
+  font-family: SourceSansProBold;
+  src: url('../fonts/source_sans_pro/SourceSansPro-Black.ttf');
+}
+
+body {
+  margin: 0;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.header {
+  width: 100%;
+  background-image: url('../images/header_back.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8px;
+}
+
+.header-top-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: SourceSansPro, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #B6B08C;
+  letter-spacing: 75px;
+  width: 100%;
+  margin: 0;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1125px) {
+  .header-top-title p {
+    width: 100%;
+    text-align: center!important;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .header-top-title p {
+    letter-spacing: 30px;
+  }
+}
+
+.header-top-title p {
+  text-align: justify;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 150px 0 100px;
+}
+
+.header__info .special {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+.header__info .title {
+  font-family:  BankGothicRegular, sans-serif;
+  font-size: 47px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 9px;
+  text-align: center;
+}
+
+.header__info .info {
+  font-family: BankGothicRegular, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+nav a {
+  padding: 30px 35px 50px;
+  background-color: #ADA856;
+  white-space: nowrap;
+  min-width: 165px;
+  text-align: center;
+  margin: 20px 20px 0;
+  font-family: SourceSansProBold, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  color: #4A4427;
+  transition: all .4s ease;
+}
+
+nav a:hover {
+  background-color: #C54A35;
+
+}
+
+.content {
+  position: relative;
+  background-color: #DADAD8;
+  padding-bottom: 20px;
+}
+
+.content .wrapper {
+  height: 100%;
+}
+
+.content .main-background {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  bottom: 0;
+  width: 100%;
+  height: 87%;
+  object-fit: cover;
+  opacity: .5;
+}
+
+@media screen and (min-width: 1900px) {
+  .content .main-background {
+    object-fit: contain;
+  }
+}
+
+.content .main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 0 0;
+  margin-bottom: 850px;
+}
+
+.content .main .card {
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content .main .card .title {
+  font-family: BankGothic, sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #080808;
+}
+
+.content .main .card .text {
+  font-family: BankGothicLight, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
+.footer__nav {
+  border-top: 1px solid #ACA6A5;
+  border-bottom: 1px solid #ACA6A5;
+  padding: 15px 0;
+  font-family: SourceSansProBold, sans-serif;
+  font-size: 24px;
+  color: #6A2929;
+}
+
+.footer__nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer__info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: SourceSansPro, sans-serif;
+  font-size: 24px;
+  color: #814342;
+}
+
+.footer .footer__info .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer .footer__info .contacts a .info {
+  transition: all .4s ease;
+}
+
+.footer .footer__info .contacts a:hover .info {
+  opacity: .5
+}
+
+.footer .footer__info .contacts a {
+  text-decoration: none;
+  color: #814342;
+}
+
+.footer .footer__info .contacts a span:first-child {
+  font-family: SourceSansProBold, sans-serif;
+}
+
+.footer .footer__info .contacts a:last-child {
+  margin-top: 20px;
+}
+
+.footer__social  {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
+}
+
+.footer__social a {
+  display: flex;
+  align-items: center;
+  font-family: SourceSansPro, sans-serif;
+  font-size: 24px;
+  color: #8F8D8C;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: all .4s ease;
+  white-space: nowrap;
+}
+
+.footer__social a:hover {
+  opacity: .5;
+}
+
+.footer__social a img {
+  width: auto;
+  height: 45px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 560px) {
+  .wrapper {
+    padding: 0 24px;
+  }
+
+  .header__info {
+    margin: 100px 0;
+  }
+
+  .header__info .title {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+
+  .header__info .special {
+    font-size: 14px;
+    letter-spacing: 5px;
+  }
+
+  .header__info .info {
+    font-size: 16px;
+  }
+
+  .content .main .card .title {
+    font-size: 28px;
+  }
+
+  .content .main .card .text {
+    font-size: 16px;
+  }
+
+  .footer .footer__info {
+    flex-direction: column;
+  }
+
+  .footer .footer__info .contacts {
+    margin: 20px 0;
+    align-items: flex-start;
+  }
+
+  .footer__social a {
+    font-size: 18px;
+  }
+
+  .footer .footer__info {
+    font-size: 18px;
+  }
+
+  .content .main {
+    margin-bottom: 200px;
+  }
+
+  .content .main-background {
+    height: 80%;
+  }
+}
